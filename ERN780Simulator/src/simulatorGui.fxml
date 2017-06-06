@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="762.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SimulatorGuiController">
+   <children>
+      <Button fx:id="taskOneButton" layoutX="32.0" layoutY="36.0" mnemonicParsing="false" onAction="#handle_taskOneButtonClick" prefHeight="38.0" prefWidth="97.0" text="Task 1" />
+      <TextArea fx:id="taskOneResultsDisplay" editable="false" layoutX="190.0" layoutY="16.0" prefHeight="78.0" prefWidth="481.0" />
+      <Button fx:id="taskTwoButton" layoutX="32.0" layoutY="125.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="97.0" text="Task 2" />
+      <TextArea fx:id="taskTwoResultsDisplay" editable="false" layoutX="190.0" layoutY="108.0" prefHeight="78.0" prefWidth="481.0" />
+      <Button fx:id="taskThreeButton" layoutX="32.0" layoutY="212.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="97.0" text="Task 3" />
+      <TextArea fx:id="taskThreeResultsDisplay" editable="false" layoutX="190.0" layoutY="195.0" prefHeight="78.0" prefWidth="481.0" />
+      <TextField fx:id="filePathField" layoutX="180.0" layoutY="313.0" prefHeight="31.0" prefWidth="502.0" promptText="enter trace file path" />
+      <LineChart fx:id="graph" layoutX="37.0" layoutY="350.0" prefHeight="400.0" prefWidth="866.0" title="Queue Length vs Time Graph">
+        <xAxis>
+          <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button fx:id="goButton" layoutX="695.0" layoutY="306.0" mnemonicParsing="false" onAction="#handle_goButtonClick" prefHeight="44.0" prefWidth="97.0" text="Go" />
+      <Label layoutX="32.0" layoutY="309.0" prefHeight="38.0" prefWidth="132.0" text="Graph" />
+   </children>
+</AnchorPane>
